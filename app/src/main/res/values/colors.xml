@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#359FF2</color>
+    <color name="red">#FE636C</color>
+    <color name="white_less">#DDF8F3F3</color>
+    <color name="purple">#3C1F7B</color>
+    <color name="purple_search">#CBC1FD</color>
+    <color name="bg_item_note">#7E64FE</color>
+    <color name="bg_float">#36364A</color>
+    <color name="hint">#4F4F4F</color>
+    <color name="hint_light">#9B9999</color>
+    <color name="btn_pickDate">#828282</color>
+    <color name="bg_insertNote">#5442AA</color>
+
+</resources>

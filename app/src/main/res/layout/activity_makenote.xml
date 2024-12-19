@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background"
+    android:fitsSystemWindows="true"
+    tools:context=".controller.MakeNoteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ln_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UselessParent">
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:contentDescription="@string/on.time"
+            android:padding="10sp"
+            android:text="@string/on.time"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tbl_options"
+        android:layout_width="298sp"
+        android:layout_height="45sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/bg_options_toolbar"
+        android:contentDescription="@string/desc_make_note_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_1"
+        app:tabBackground="@drawable/bg_choose_options"
+        app:tabIndicatorAnimationDuration="700"
+        app:tabIndicatorColor="@color/white_less"
+        app:tabIndicatorHeight="1.8sp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white_less" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pg_forTablayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125sp"
+        android:padding="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbl_options" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_subFloat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_float1"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_subFloat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_btn_note" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_subFloat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_float2"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fab_bassFloat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_btn_schedule" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_bassFloat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="15sp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_float"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="35sp"
+        app:srcCompat="@drawable/img_btn_float" />
+</androidx.constraintlayout.widget.ConstraintLayout>
